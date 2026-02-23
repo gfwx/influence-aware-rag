@@ -1,91 +1,841 @@
-query,baseline_answer,spearman_rho,spearman_pvalue,dominance_ratio,influence_entropy,is_divergent,doc_id,retrieval_rank,retrieval_score,rouge_l,influence_score,influence_rank
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,0,1,6.093816961865978,0.0,1.0,1
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,3,2,5.799445872759454,1.0,0.0,6
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,14,3,5.723277802542303,0.0,1.0,2
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,6,4,5.693355303607825,0.0,1.0,3
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,12,5,5.690971482683176,1.0,0.0,7
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,5,6,5.516858056101015,0.0,1.0,4
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,13,7,5.297808456753268,0.0,1.0,5
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,1,8,4.964178076962808,1.0,0.0,8
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,8,9,4.5892735668894975,1.0,0.0,9
-in us national flood insurance is available for which of the following,I don't know.,0.8181818181818182,0.003814920082550714,0.2,1.6094379124341005,False,10,10,4.199231997053392,1.0,0.0,10
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,0,1,5.353090142001042,0.0,1.0,1
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,4,2,4.811788460289529,1.0,0.0,7
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,7,3,4.004679011032575,0.0,1.0,2
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,1,4,3.981303323684171,1.0,0.0,8
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,3,5,3.9315357048640482,1.0,0.0,9
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,9,6,3.8484256185143155,0.0,1.0,3
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,11,7,3.586057321893607,0.0,1.0,4
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,12,8,3.3064408838170154,0.0,1.0,5
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,8,9,3.0226812398660208,1.0,0.0,10
-who has the rights to alice in wonderland,I don't know.,0.38181818181818183,0.27625533338543623,0.16666666666666666,1.7917594692280547,True,13,10,2.5669817450573524,0.0,1.0,6
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,1,4.785912373133868,0.0,1.0,1
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,2,2.705204291197257,0.0,1.0,2
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,3,2.705204291197257,0.0,1.0,3
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,4,2.4795556011188893,0.0,1.0,4
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,5,2.3967221278837005,0.0,1.0,5
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,6,1.8152988841143904,0.0,1.0,6
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,7,1.8152988841143904,0.0,1.0,7
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,8,1.7356889207832222,0.0,1.0,8
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,9,1.6826299817103083,0.0,1.0,9
-what purpose did seasonal monsoon winds have on trade,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,10,1.5023481979556323,0.0,1.0,10
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,1,4.201090838291998,0.0,1.0,1
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,2,2.2686835413183646,0.0,1.0,2
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,3,1.3181735156215288,0.0,1.0,3
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,4,1.3181735156215288,0.0,1.0,4
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,5,0.6715463506964766,0.0,1.0,5
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,6,0.6715463506964766,0.0,1.0,6
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,7,0.6466271649250523,0.0,1.0,7
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,8,0.6466271649250523,0.0,1.0,8
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,9,0.47008244548753364,0.0,1.0,9
-when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,10,0.47008244548753364,0.0,1.0,10
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,1,1,3.9918281387672803,0.2105263157894737,0.7894736842105263,4
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,4,2,3.561511734868124,0.7647058823529412,0.23529411764705876,9
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,13,3,3.1867069032596524,0.6666666666666666,0.33333333333333337,8
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,7,4,3.0507753233633244,0.0,1.0,1
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,8,5,2.5752329761433077,0.0,1.0,2
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,5,6,2.4911785369668022,0.5306122448979592,0.4693877551020408,6
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,0,7,2.365744125069713,0.5714285714285715,0.4285714285714285,7
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,3,8,2.226020393080495,0.3396226415094339,0.6603773584905661,5
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,2,9,2.146935114614476,0.7647058823529412,0.23529411764705876,10
-where did the idea of fortnite come from,"The concept was inspired by combining elements of **Minecraft** and **Left 4 Dead**, as described by Epic’s founder Tim Sweeney.",0.0303030303030303,0.9337729580941466,0.16255585147786386,2.178564631718446,True,6,10,1.5487794372947747,0.0,1.0,3
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,5,1,9.22828402438157,0.0,1.0,1
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,4,2,7.0989960639397935,1.0,0.0,8
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,13,3,5.304746159802194,0.0,1.0,2
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,6,4,4.863041567737088,0.0,1.0,3
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,10,5,3.6637278150057773,0.0,1.0,4
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,3,6,3.247234672259456,0.0,1.0,5
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,11,7,3.214762325536862,1.0,0.0,9
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,9,8,3.143913569051201,0.0,1.0,6
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,14,9,3.131262005393047,0.0,1.0,7
-when is the last time the philadelphia won the superbowl,I don't know.,0.6848484848484848,0.02888279750673277,0.14285714285714285,1.945910149055313,True,12,10,3.00846741694626,1.0,0.0,10
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,6,1,5.418389424618362,1.0,0.0,4
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,3,2,4.96350412258159,0.0,1.0,1
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,7,3,4.290312072584843,1.0,0.0,5
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,1,4,3.849469054679795,0.0,1.0,2
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,10,5,3.481577753561552,1.0,0.0,6
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,12,6,3.3793299048855534,0.0,1.0,3
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,14,7,2.710821638347886,1.0,0.0,7
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,2,8,1.6421806068102445,1.0,0.0,8
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,5,9,1.5794121173000584,1.0,0.0,9
-when is the next deadpool movie being released,"May 18, 2018.",0.8303030303030302,0.0029402270232795095,0.3333333333333333,1.0986122886681096,False,4,10,1.5299819318107868,1.0,0.0,10
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,2,1,8.154949696266836,0.31578947368421056,0.6842105263157894,3
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,10,2,5.612252598245045,0.5172413793103449,0.48275862068965514,9
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,4,3,5.1350939586147515,0.5063291139240507,0.49367088607594933,6
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,11,4,5.123618036701651,0.0,1.0,1
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,3,5,4.872899221288961,0.5176470588235295,0.48235294117647054,10
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,0,6,4.418682494300127,0.0,1.0,2
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,6,7,4.322697824733168,0.4897959183673469,0.5102040816326531,5
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,7,8,3.995059398026455,0.5154639175257731,0.48453608247422686,8
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,1,9,3.880950089915463,0.5098039215686274,0.4901960784313726,7
-meaning of lyrics to wade in the water,The lyrics of “Wade in the Water” draw on biblical imagery of the Israelites’ escape from Egypt (the crossing of the Red Sea) and the New‑Testament idea of healing when one steps,0.05454545454545454,0.8810361811618524,0.162085170388621,2.255214986600154,True,13,10,3.6448363431863413,0.45833333333333326,0.5416666666666667,4
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,4,1,10.97931649000311,0.0,1.0,1
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,6,2,6.231423237970903,0.4827586206896552,0.5172413793103448,6
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,8,3,5.481393217991442,0.4444444444444445,0.5555555555555556,3
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,11,4,5.19432827943414,0.0,1.0,2
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,14,5,5.159232104725092,1.0,0.0,7
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,1,6,4.784405047833501,0.4444444444444445,0.5555555555555556,4
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,9,7,4.668519656775609,0.4444444444444445,0.5555555555555556,5
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,0,8,4.531084842937112,1.0,0.0,8
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,5,9,4.461723821697225,1.0,0.0,9
-who was the governor general of india when country became independent,"Louis Mountbatten, 1st Earl Mountbatten of Burma.",0.8060606060606059,0.004862061101964608,0.23901098901098902,1.7468916822530338,False,3,10,4.457533371070385,1.0,0.0,10
+query,baseline_answer,spearman_rho,spearman_pvalue,dominance_ratio,influence_entropy,is_divergent,doc_id,passage,retrieval_rank,retrieval_score,rouge_l,influence_score,influence_rank
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,2,,1,8.154949696266836,0.34782608695652173,0.6521739130434783,6
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,10,,2,5.612252598245045,0.28099173553719015,0.7190082644628099,5
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,4,,3,5.1350939586147515,0.4605263157894737,0.5394736842105263,9
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,11,,4,5.123618036701651,0.0,1.0,1
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,3,,5,4.872899221288961,0.5205479452054795,0.47945205479452047,10
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,0,,6,4.418682494300127,0.20183486238532114,0.7981651376146789,3
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,6,,7,4.322697824733168,0.4342105263157895,0.5657894736842105,7
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,7,,8,3.995059398026455,0.4585987261146497,0.5414012738853503,8
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,1,,9,3.880950089915463,0.20370370370370372,0.7962962962962963,4
+meaning of lyrics to wade in the water,"The lyrics of “Wade in the Water” are a spiritual that draws on biblical themes of escape and healing.  According to the documents, the verses echo the Israelites’ crossing of the Red Sea (Exodus 14) and the idea that stepping into water can “make whole” (John 5:4).  In the context of the Underground Railroad, Harriet Tubman used the song to tell escaping slaves to leave the trail and wade into water so that slave‑hunters’ dogs would lose their scent.  The song has also been interpreted as a call for freedom and",-0.22424242424242422,0.5334005612725946,0.14100871803082618,2.2715650311317215,True,13,,10,3.6448363431863413,0.0,1.0,2
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,1,4.989045389341676,1.0,0.0,1
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,11,,2,4.911580739912596,1.0,0.0,2
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,3,4.5700458969756745,1.0,0.0,3
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,4,4.3623000985693,1.0,0.0,4
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,10,,5,3.962578359058083,1.0,0.0,5
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,1,,6,3.3225711831977116,1.0,0.0,6
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,9,,7,2.903838408700508,1.0,0.0,7
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,8,2.8836469434054464,1.0,0.0,8
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,9,2.874835188039807,1.0,0.0,9
+when is the next tangled the series episode coming out,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,10,2.581777566409835,1.0,0.0,10
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,14,,1,5.310901889282077,1.0,0.0,2
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,1,,2,4.4754162559850545,1.0,0.0,3
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,9,,3,4.422220588278833,1.0,0.0,4
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,6,,4,4.278102207170794,1.0,0.0,5
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,12,,5,2.9640551372047197,1.0,0.0,6
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,0,,6,2.8106649226170477,1.0,0.0,7
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,4,,7,2.7007362525759757,1.0,0.0,8
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,2,,8,2.600580714009462,0.3076923076923077,0.6923076923076923,1
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,7,,9,2.0581143543162383,1.0,0.0,9
+who died in the plane crash greys anatomy,Lexie Grey.,0.6606060606060605,0.03758837757140935,1.0,-0.0,True,5,,10,1.8442104214814115,1.0,0.0,10
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,7,,1,7.258839642435748,1.0,0.0,4
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,13,,2,4.990156101117384,0.0,1.0,1
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,14,,3,4.5045165699603,1.0,0.0,5
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,1,,4,2.990658142420518,0.0,1.0,2
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,12,,5,2.658482541786895,1.0,0.0,6
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,8,,6,2.2532329306450944,1.0,0.0,7
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,0,,7,2.2262940076371867,1.0,0.0,8
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,9,,8,2.04117048363075,1.0,0.0,9
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,11,,9,2.04117048363075,1.0,0.0,10
+why did alex and ellen break up on family ties,I don't know.,0.5636363636363636,0.0897240283170912,0.3333333333333333,1.0986122886681096,True,3,,10,1.8623659936964556,0.0,1.0,3
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,11,,1,4.492438890731836,0.0,1.0,1
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,0,,2,4.043191544388129,0.4166666666666667,0.5833333333333333,3
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,1,,3,2.816555047605511,0.4166666666666667,0.5833333333333333,4
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,9,,4,2.784126051834835,0.4166666666666667,0.5833333333333333,5
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,6,,5,2.305332159635709,0.4166666666666667,0.5833333333333333,6
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,4,,6,2.0418656271059135,0.4166666666666667,0.5833333333333333,7
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,7,,7,1.9759989939734648,0.4166666666666667,0.5833333333333333,8
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,5,,8,1.8442657277085672,0.4166666666666667,0.5833333333333333,9
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,2,,9,1.3831992957814254,1.0,0.0,10
+youtube phil collins don't lose my number,Lose My Number (Official Music Video) on YouTube.,0.5636363636363636,0.0897240283170912,0.17483443708609275,2.178996441615416,True,12,,10,1.3831992957814254,0.36363636363636365,0.6363636363636364,2
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,3.611459869339153,0.0,1.0,1
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,2,2.6398636357686076,0.0,1.0,2
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,3,2.6398636357686076,0.0,1.0,3
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,4,2.636451687962832,0.0,1.0,4
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,5,2.5059102816040206,0.0,1.0,5
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,6,2.154950351632481,0.0,1.0,6
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,7,1.9128784669269607,0.0,1.0,7
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,8,1.830080742187804,0.0,1.0,8
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,9,1.830080742187804,0.0,1.0,9
+bond villain has a good head for numbers,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,10,1.698182049369902,0.0,1.0,10
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,1,,1,8.387338805655604,1.0,0.0,1
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,2,7.334002788133455,1.0,0.0,2
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,3,4.657094412380069,1.0,0.0,3
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,4,4.657094412380069,1.0,0.0,4
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,10,,5,4.657094412380069,1.0,0.0,5
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,6,2.3832524467620533,1.0,0.0,6
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,9,,7,2.0037628250571493,1.0,0.0,7
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,8,1.4026339775400047,1.0,0.0,8
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,9,0.0,1.0,0.0,9
+who lives who dies who tells your atory lyrics,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,6,,10,0.0,1.0,0.0,10
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,4,,1,5.169273256587806,0.7547169811320754,0.24528301886792458,5
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,3,,2,3.5812082655739745,0.7289719626168225,0.2710280373831775,2
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,5,,3,3.0012629664017583,0.7647058823529412,0.23529411764705876,7
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,2,,4,2.895306051961975,0.7326732673267327,0.26732673267326734,3
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,6,,5,2.818114803297574,0.0,1.0,1
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,1,,6,2.745209804799671,0.9016393442622951,0.09836065573770492,10
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,7,,7,2.5478231556666273,0.7572815533980584,0.24271844660194164,6
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,8,,8,2.1812325773963854,0.8833333333333333,0.1166666666666667,9
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,9,,9,1.8972087941806137,0.7450980392156863,0.2549019607843137,4
+who are the faces of the postcode lottery,"The “faces” of People’s Postcode Lottery are its celebrity ambassadors and TV presenters, including:
+
+- David Attenborough  
+- Clare Balding  
+- Brian Blessed  
+- Judi Dench  
+- Shobna Gulati  
+- Tim Healy  
+- Stephen Jardine  
+- Ellen MacArthur  
+- Aggie MacKenzie  
+- Carey Mulligan  
+- John Stapleton  
+- Emma Thompson  
+- Fiona Phillips (ambassador since 2012)  
+
+Presenters who appear in its TV campaigns:  
+- Judie McCourt  
+- Danyl Johnson  
+- Jeff Brazier  
+- Matt Johnson",0.41818181818181815,0.22911284098281895,0.34789424044025646,2.0440484660705645,True,0,,10,1.4715896998561258,0.8571428571428572,0.1428571428571428,8
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,1,4.435929942740965,0.0,1.0,1
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,2,3.5509434022580226,0.0,1.0,2
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,3,3.5509434022580226,0.0,1.0,3
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,4,3.2475919660779287,0.0,1.0,4
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,5,1.7989747174896422,0.0,1.0,5
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,6,1.6756805000915982,0.0,1.0,6
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,7,1.6756805000915982,0.0,1.0,7
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,8,1.355115534856684,0.0,1.0,8
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,9,1.355115534856684,0.0,1.0,9
+how did rogue get super strength and flight,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,10,1.355115534856684,0.0,1.0,10
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,1,3.9918281387672803,0.0,1.0,1
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,2,3.561511734868124,0.0,1.0,2
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,3,3.1867069032596524,0.0,1.0,3
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,4,3.0507753233633244,0.0,1.0,4
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,5,2.5752329761433077,0.0,1.0,5
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,6,2.4911785369668022,0.0,1.0,6
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,7,2.365744125069713,0.0,1.0,7
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,8,2.226020393080495,0.0,1.0,8
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,9,2.146935114614476,0.0,1.0,9
+where did the idea of fortnite come from,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,,10,1.5487794372947747,0.0,1.0,10
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,4.201090838291998,0.0,1.0,1
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,2,2.2686835413183646,0.0,1.0,2
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,3,1.3181735156215288,0.0,1.0,3
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,4,1.3181735156215288,0.0,1.0,4
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,5,0.6715463506964766,0.0,1.0,5
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,6,0.6715463506964766,0.0,1.0,6
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,7,0.6466271649250523,0.0,1.0,7
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,8,0.6466271649250523,0.0,1.0,8
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,,9,0.47008244548753364,0.0,1.0,9
+when is the next scandal episode coming out,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,10,0.47008244548753364,0.0,1.0,10
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,1,4.2959310076012445,0.0,1.0,1
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,2,3.4340461618444267,0.0,1.0,2
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,3,3.228393934692769,0.0,1.0,3
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,4,2.6461093469446326,0.0,1.0,4
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,5,2.6252848664768207,0.0,1.0,5
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,6,2.438328296338949,0.0,1.0,6
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,7,1.9584730996517474,0.0,1.0,7
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,8,1.832174387351135,0.0,1.0,8
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,9,1.4852660849841968,0.0,1.0,9
+where is gall bladder situated in human body,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,10,1.352319190663933,0.0,1.0,10
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,1,,1,10.953268677741196,1.0,0.0,1
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,2,10.094159127977365,1.0,0.0,2
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,3,8.649505731958651,1.0,0.0,3
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,4,4.564550086938316,1.0,0.0,4
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,5,2.9678528851688304,1.0,0.0,5
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,12,,6,1.6863989535702286,1.0,0.0,6
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,7,0.6466271649250523,1.0,0.0,7
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,8,0.0,1.0,0.0,8
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,6,,9,0.0,1.0,0.0,9
+who was named african footballer of the year 2014,Yaya Touré.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,10,0.0,1.0,0.0,10
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,1,6.350824184299489,0.0,1.0,1
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,2,3.648253115398065,0.0,1.0,2
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,3,3.4736049766515116,0.0,1.0,3
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,4,3.196479048826489,0.0,1.0,4
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,5,2.8731235743084698,0.0,1.0,5
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,6,2.841599020084618,0.0,1.0,6
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,7,2.736783118722145,0.0,1.0,7
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,8,2.5150876988226183,0.0,1.0,8
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,9,2.394469873244619,0.0,1.0,9
+differentiate between dot matrix printer and daisy wheel printer,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,10,2.264804092543646,0.0,1.0,10
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,1,4.893818137150534,0.0,1.0,1
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,2,3.721488701961844,0.0,1.0,2
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,3,3.676787004711276,0.0,1.0,3
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,4,3.139204114213708,0.0,1.0,4
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,5,1.5645594037699013,0.0,1.0,5
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,6,1.5645594037699013,0.0,1.0,6
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,7,1.4528051606434798,0.0,1.0,7
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,8,1.408103463392911,0.0,1.0,8
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,9,1.3410509175170582,0.0,1.0,9
+where have the good guys gone to hideaway,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,10,1.251647523015921,0.0,1.0,10
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,0,,1,14.331587379131237,0.3142857142857142,0.6857142857142857,1
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,2,,2,5.424960962099094,0.5454545454545454,0.4545454545454546,8
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,3,,3,5.14783503427407,0.4705882352941177,0.5294117647058822,7
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,1,,4,2.27865483658283,0.31496062992125984,0.6850393700787402,2
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,4,,5,1.5848968035179825,0.4666666666666667,0.5333333333333333,6
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,12,,6,0.6466271649250523,0.38,0.62,3
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,5,,7,0.0,0.40860215053763443,0.5913978494623655,5
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,6,,8,0.0,0.9380530973451328,0.06194690265486724,10
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,7,,9,0.0,0.38926174496644295,0.610738255033557,4
+central london properties v high trees house 1947,"Central London Property Trust Ltd v High Trees House Ltd (1947) was a High Court decision that confirmed and extended the doctrine of promissory estoppel. The case held that the landlord, after agreeing in 1940 to reduce rent during wartime, could not later recover the full rent from the time the flats were fully occupied in 1945.",0.3939393939393939,0.2599977668348876,0.13443020775714207,2.2164495067368746,True,8,,10,0.0,0.6712328767123288,0.3287671232876712,9
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,1,4.366582329647501,0.0,1.0,1
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,2,3.2901980272735836,0.0,1.0,2
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,3,3.2317491615568987,0.0,1.0,3
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,4,3.1887659119600924,0.0,1.0,4
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,5,2.1651287494995293,0.0,1.0,5
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,6,2.035591132008104,0.0,1.0,6
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,7,1.9156488935901184,0.0,1.0,7
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,8,1.8351162477951848,0.0,1.0,8
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,9,1.7077490136656093,0.0,1.0,9
+why is the new disney movie called coco,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,10,1.6313152342815986,0.0,1.0,10
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,9,,1,4.99099313760135,0.9333333333333333,0.06666666666666665,6
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,4,,2,4.861576253921715,0.7333333333333333,0.2666666666666667,4
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,5,,3,4.030676672975743,1.0,0.0,8
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,0,,4,3.537313991831434,1.0,0.0,9
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,7,,5,2.482925652598679,0.43478260869565216,0.5652173913043479,1
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,3,,6,1.9715763270193032,0.43478260869565216,0.5652173913043479,2
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,14,,7,1.7619931316573785,0.43478260869565216,0.5652173913043479,3
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,11,,8,1.3659018251674273,1.0,0.0,10
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,13,,9,1.2032634158653257,0.8666666666666667,0.1333333333333333,5
+who took over for batman when his back was broken,"Jean‑Paul Valley, the Azrael character, became Batman after Bruce Wayne’s back was broken.",0.05454545454545454,0.8810361811618524,0.2535760728218466,1.6762229213657962,True,12,,10,1.0679453187424597,0.9333333333333333,0.06666666666666665,7
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,1,4.6219507022492925,0.0,1.0,1
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,2,4.307010336929062,0.0,1.0,2
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,3,3.398015235696107,0.0,1.0,3
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,4,2.4266581569444043,0.0,1.0,4
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,5,2.360803703529793,0.0,1.0,5
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,6,2.3193496781299054,0.0,1.0,6
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,7,2.2226727480566772,0.0,1.0,7
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,,8,2.119665591351983,0.0,1.0,8
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,9,1.994769470649425,0.0,1.0,9
+make a project report on agricultural crops grown in india,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,10,1.878794501425621,0.0,1.0,10
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,1,4.871800943657781,0.0,1.0,1
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,2,3.272919686112006,0.0,1.0,2
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,3,2.2686835413183646,0.0,1.0,3
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,4,1.8185223940184108,0.0,1.0,4
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,5,1.4949224180551077,0.0,1.0,5
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,6,1.2729656758128876,0.0,1.0,6
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,7,1.2729656758128876,0.0,1.0,7
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,8,1.0340368931160238,0.0,1.0,8
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,9,0.9505947978133529,0.0,1.0,9
+where did they film high school musical two,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,10,0.2503262859080122,0.0,1.0,10
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,6,,1,9.487283995261704,0.25,0.75,1
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,4,,2,7.3335965716920715,1.0,0.0,4
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,1,,3,5.768600128944615,1.0,0.0,5
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,5,,4,2.9685298847429182,1.0,0.0,6
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,0,,5,2.7351506059772714,1.0,0.0,7
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,3,,6,2.5603773108221355,1.0,0.0,8
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,8,,7,2.532303197465546,1.0,0.0,9
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,9,,8,2.508907695905379,1.0,0.0,10
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,2,,9,1.8083993907055553,0.4444444444444445,0.5555555555555556,2
+who wrote the poem the woods are lovely dark and deep,Robert Frost.,0.23636363636363633,0.5108853175152,0.40298507462686567,1.0880226742525103,True,10,,10,1.602061386990798,0.4444444444444445,0.5555555555555556,3
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,10,,1,7.753034866710177,0.6666666666666666,0.33333333333333337,3
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,1,,2,5.818660362989501,0.4,0.6,2
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,7,,3,5.600668647353435,0.7619047619047619,0.23809523809523814,9
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,11,,4,5.184170509099051,0.6666666666666666,0.33333333333333337,4
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,0,,5,3.84945248992688,0.6666666666666666,0.33333333333333337,5
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,9,,6,3.344606261739748,0.8648648648648648,0.1351351351351352,10
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,13,,7,3.164673888103822,0.6666666666666666,0.33333333333333337,6
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,4,,8,3.123736036907878,0.6666666666666666,0.33333333333333337,7
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,3,,9,3.017784756123868,0.6666666666666666,0.33333333333333337,8
+where does the story the great gatsby take place,"The story takes place in the summer of 1922 in the fictional town of West Egg on Long Island, New York.",0.1515151515151515,0.6760651759978539,0.2516843741902047,2.1637970160848807,True,6,,10,2.7401193306209457,0.0,1.0,1
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,0,,1,6.093816961865978,0.0,1.0,1
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,3,,2,5.799445872759454,1.0,0.0,4
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,14,,3,5.723277802542303,1.0,0.0,5
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,6,,4,5.693355303607825,1.0,0.0,6
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,12,,5,5.690971482683176,1.0,0.0,7
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,5,,6,5.516858056101015,1.0,0.0,8
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,13,,7,5.297808456753268,1.0,0.0,9
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,1,,8,4.964178076962808,1.0,0.0,10
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,8,,9,4.5892735668894975,0.0,1.0,2
+in us national flood insurance is available for which of the following,I don't know.,0.23636363636363633,0.5108853175152,0.3333333333333333,1.0986122886681096,True,10,,10,4.199231997053392,0.0,1.0,3
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,6.496580446378459,0.0,1.0,1
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,2,6.241156522822107,0.0,1.0,2
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,3,5.707595365468917,0.0,1.0,3
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,4,5.429081916611938,0.0,1.0,4
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,5,4.732691464391019,0.0,1.0,5
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,6,4.530308041581374,0.0,1.0,6
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,7,3.8869865885365704,0.0,1.0,7
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,8,3.6636665792544276,0.0,1.0,8
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,9,3.5813521715407575,0.0,1.0,9
+where is the tv show the curse of oak island filmed,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,10,3.3086400240998035,0.0,1.0,10
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,7,,1,4.521468118811556,0.0,1.0,1
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,0,,2,4.44425178001117,0.038461538461538464,0.9615384615384616,2
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,10,,3,4.297604845722963,0.9894736842105264,0.010526315789473606,6
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,5,,4,4.2837583540734325,0.6666666666666666,0.33333333333333337,4
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,3,,5,3.9948701873855055,0.7368421052631579,0.26315789473684215,5
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,8,,6,3.6450889267388487,0.5454545454545454,0.4545454545454546,3
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,14,,7,3.3525817906425215,0.9894736842105264,0.010526315789473606,7
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,4,,8,3.307580692781548,1.0,0.0,8
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,1,,9,3.271233652201531,1.0,0.0,9
+cast of law & order special victim unit,"**Main cast of *Law & Order: Special Victims Unit* (as listed in the provided documents):**
+
+- Christopher Meloni  
+- Mariska Hargitay  
+- Richard Belzer  
+- Dann Florek  
+- Michelle Hurd  
+- Stephanie March  
+- Ice‑T  
+- B.D. Wong  
+- Diane Neal  
+- Tamara Tunie  
+- Adam Beach  
+- Michaela McManus  
+- Danny Pino  
+- Kelli Giddish  
+- Raúl Esparza  
+- Peter Scanavino",0.8909090909090909,0.0005421442248338671,0.3296383320324664,1.5084545075853089,False,13,,10,2.7000658716584063,1.0,0.0,10
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,3,,1,3.780152768705599,0.6967741935483871,0.3032258064516129,7
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,0,,2,3.340540393032583,0.0,1.0,1
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,1,,3,3.108084561919581,0.5571428571428572,0.44285714285714284,5
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,5,,4,2.578501157499603,0.0,1.0,2
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,9,,5,2.52056647570011,0.806201550387597,0.193798449612403,10
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,8,,6,2.215901998603229,0.0,1.0,3
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,11,,7,2.043613362768829,0.6013986013986014,0.39860139860139865,6
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,4,,8,2.0029428634148703,0.7101449275362318,0.2898550724637682,8
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,2,,9,1.8966859475838427,0.7285714285714284,0.2714285714285716,9
+what happens to the rbc in acute hemolytic reaction,"In an acute hemolytic reaction the transfused red blood cells are rapidly destroyed.  
+- **Intravascular hemolysis**: host IgM (or IgG) antibodies bind the donor cells, activate complement, and the cells lyse in the bloodstream, releasing hemoglobin into the plasma.  
+- **Extravascular hemolysis**: IgG‑coated cells are taken up by macrophages in the liver and spleen, where they are phagocytosed and degraded.  
+
+The result is hemoglobinuria, possible jaundice, and, if severe, kidney failure or disseminated intravascular coagulation.",0.29696969696969694,0.40470167127015694,0.16949823521491428,2.134264668269683,True,7,,10,1.4964515646203056,0.0,1.0,4
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,1,8.515310282923405,0.0,1.0,1
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,2,7.116397316622177,0.0,1.0,2
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,3,6.38476750508187,0.0,1.0,3
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,4,5.48639610642531,0.0,1.0,4
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,5,5.391431172321783,0.0,1.0,5
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,6,5.3809840250370025,0.0,1.0,6
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,7,5.253986181935841,0.0,1.0,7
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,8,5.034319551192981,0.0,1.0,8
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,9,4.642120355798813,0.0,1.0,9
+the primary reason for the creation of federal whistleblower statutes was to,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,10,4.603977445731437,0.0,1.0,10
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,8,,1,6.225027857209238,1.0,0.0,3
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,11,,2,5.504078610415499,1.0,0.0,4
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,10,,3,4.813879253399104,1.0,0.0,5
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,14,,4,4.794600232105532,1.0,0.0,6
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,6,,5,3.500881969456079,1.0,0.0,7
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,7,,6,3.3401215576259897,1.0,0.0,8
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,5,,7,3.2113361181366593,0.0,1.0,1
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,9,,8,3.1849419491900153,1.0,0.0,9
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,12,,9,3.1230480872896824,1.0,0.0,10
+what was the city of beijing previously known as,Peking.,0.23636363636363633,0.5108853175152,0.5,0.6931471805599453,True,0,,10,2.3250499680048877,0.0,1.0,2
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,4,,1,4.782866749680198,0.33333333333333326,0.6666666666666667,3
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,1,,2,3.388015328278601,0.6976744186046512,0.3023255813953488,6
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,0,,3,2.9718563100561464,0.33333333333333326,0.6666666666666667,4
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,5,,4,2.8148559378954223,0.6060606060606061,0.3939393939393939,5
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,13,,5,2.2686835413183646,0.2941176470588235,0.7058823529411765,2
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,8,,6,1.4699353831853497,0.0,1.0,1
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,10,,7,1.4699353831853497,0.7804878048780488,0.2195121951219512,9
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,7,,8,1.3383607474876398,0.7,0.30000000000000004,7
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,9,,9,0.8634585467662192,0.7,0.30000000000000004,8
+what does hp mean in war and order,HP stands for **hit points** (or health points) – the measure of a character’s or entity’s health in the game.,0.6242424242424242,0.053717767217167436,0.2112164360922598,2.1628912092378254,True,2,,10,0.7915036678690344,0.8205128205128205,0.17948717948717952,10
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,6.408544334607645,0.0,1.0,1
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,2,5.690218520694089,0.0,1.0,2
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,3,4.5494143248482395,0.0,1.0,3
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,4,3.716238784339801,0.0,1.0,4
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,5,2.582084069216518,0.0,1.0,5
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,6,2.379527256980969,0.0,1.0,6
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,7,2.362555760163885,0.0,1.0,7
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,8,1.8207472400929428,0.0,1.0,8
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,9,1.6917395651603069,0.0,1.0,9
+what are the requirements of passing national senior certificate,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,10,1.596469977291366,0.0,1.0,10
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,14,,1,5.239823705279872,1.0,0.0,5
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,12,,2,4.822326724789443,0.0,1.0,1
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,8,,3,4.711726507252932,0.4,0.6,4
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,13,,4,4.5357365105011365,0.0,1.0,2
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,4,,5,4.524845777147945,1.0,0.0,6
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,1,,6,3.499827740686417,1.0,0.0,7
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,3,,7,3.163749055561424,1.0,0.0,8
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,10,,8,2.800236962491093,0.0,1.0,3
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,6,,9,2.664423000465511,1.0,0.0,9
+are all firestone tires made in the usa,I don't know,0.6969696969696969,0.025096675882251854,0.2777777777777778,1.366071449423063,True,9,,10,2.5188962823677965,1.0,0.0,10
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,1,5.09802137218686,0.0,1.0,1
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,2,3.955213957421418,0.0,1.0,2
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,3,3.8536719832189203,0.0,1.0,3
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,9,,4,3.56467330892099,0.0,1.0,4
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,,5,2.5389598378436755,0.0,1.0,5
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,6,2.5297166225700307,0.0,1.0,6
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,7,2.3891732525564686,0.0,1.0,7
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,12,,8,2.356930950023946,0.0,1.0,8
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,9,2.2437225854025153,0.0,1.0,9
+the south west wind blows across nigeria between,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,10,2.2341621826885696,0.0,1.0,10
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,16.05159811859769,0.0,1.0,1
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,2,3.7052423210197554,0.0,1.0,2
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,8,,3,3.2276035168979886,0.0,1.0,3
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,4,1.630662303168031,0.0,1.0,4
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,5,1.5928147978509934,0.0,1.0,5
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,7,,6,1.4666564467942012,0.0,1.0,6
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,7,0.946187632925941,0.0,1.0,7
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,8,0.946187632925941,0.0,1.0,8
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,6,,9,0.8945773984027078,0.0,1.0,9
+names of supreme court judges in sri lanka,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,10,0.8945773984027078,0.0,1.0,10
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,1,11.622626700055726,1.0,0.0,1
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,1,,2,7.589968780540039,1.0,0.0,2
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,3,4.89216146208045,1.0,0.0,3
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,11,,4,3.7562833914535947,1.0,0.0,4
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,12,,5,3.153134645796229,1.0,0.0,5
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,6,2.961584134797879,1.0,0.0,6
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,13,,7,2.904856327229597,1.0,0.0,7
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,8,2.88835814146168,1.0,0.0,8
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,9,2.640778479299633,1.0,0.0,9
+curious incident of the dog in the nighttime singapore wikipedia,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,10,2.4774414135929463,1.0,0.0,10
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,14,,1,7.984908912283032,0.0,1.0,1
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,2,,2,7.519429735599061,0.7599999999999999,0.2400000000000001,8
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,8,,3,6.489802957173513,0.9836065573770492,0.016393442622950838,10
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,0,,4,5.647115687275109,0.33333333333333337,0.6666666666666666,2
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,6,,5,4.662872130780697,0.7540983606557377,0.24590163934426235,7
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,1,,6,4.124518685832136,0.6129032258064516,0.3870967741935484,5
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,12,,7,4.037272674619412,0.5217391304347827,0.4782608695652173,3
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,9,,8,3.8475087497311184,0.8387096774193549,0.16129032258064513,9
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,11,,9,3.5682263656059696,0.5925925925925926,0.40740740740740744,4
+what is the total eclipse of the heart video about,"The video shows Bonnie Tyler in white, dreaming or fantasizing about her students in a boys’ boarding school, with young men dancing, doing school activities and singing in a choir.",0.07878787878787878,0.8287173946974605,0.25850993743518713,2.065650385604141,True,13,,10,3.2769652899808297,0.7346938775510204,0.26530612244897955,6
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,0,,1,8.580781307556258,0.0,1.0,1
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,10,,2,7.34336063919693,0.0,1.0,2
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,8,,3,6.280261478531665,0.0,1.0,3
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,4,,4,4.992407251158194,0.0,1.0,4
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,2,,5,4.902680029366218,0.0,1.0,5
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,12,,6,4.787599140876795,0.0,1.0,6
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,1,,7,4.751594939382592,0.0,1.0,7
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,13,,8,4.656897030357352,0.0,1.0,8
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,7,,9,3.708069219181159,1.0,0.0,10
+in which regions are most of africa petroleum and natural gas found,"Most of Africa’s petroleum and natural gas are found in the Niger Delta Basin, the coastal “South‑south” region of Nigeria.",0.9878787878787878,9.307459988955518e-08,0.12465373961218837,2.0927602400023684,False,14,,10,3.6094897063316846,0.9777777777777777,0.022222222222222254,9
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,1,4.959515477718872,1.0,0.0,1
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,12,,2,4.012968906959227,1.0,0.0,2
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,9,,3,3.706088545070837,1.0,0.0,3
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,4,3.458305616665319,1.0,0.0,4
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,5,3.182389207375058,1.0,0.0,5
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,6,3.0727890781292038,1.0,0.0,6
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,7,2.879954165414122,1.0,0.0,7
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,14,,8,2.6782286128441313,1.0,0.0,8
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,9,2.608483076051315,1.0,0.0,9
+what is the most current adobe flash player version,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,11,,10,2.5646430243529736,1.0,0.0,10
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,1,,1,5.338947816983647,0.631578947368421,0.368421052631579,1
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,0,,2,4.233976721351095,0.7000000000000001,0.29999999999999993,2
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,14,,3,3.1962091220474105,0.7000000000000001,0.29999999999999993,3
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,5,,4,2.533240323055102,0.7000000000000001,0.29999999999999993,4
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,7,,5,2.2504904415039544,1.0,0.0,7
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,10,,6,2.240733070358972,1.0,0.0,8
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,8,,7,2.16690800386693,0.7000000000000001,0.29999999999999993,5
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,9,,8,2.013937604626242,1.0,0.0,9
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,12,,9,1.822897257618203,0.7000000000000001,0.29999999999999993,6
+where is republic of doyle supposed to take place,"Republic of Doyle is set in St. John’s, Newfoundland and Labrador, Canada.",0.8666666666666665,0.001173538180155469,0.19718309859154934,1.7885564422182278,False,11,,10,1.7802328280085233,1.0,0.0,10
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,1,4.45203880055468,1.0,0.0,1
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,6,,2,3.096709033369977,1.0,0.0,2
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,3,3.0713392661722354,1.0,0.0,3
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,14,,4,3.0625061627135124,1.0,0.0,4
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,5,3.0412476491391507,1.0,0.0,5
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,6,2.4754854009281386,1.0,0.0,6
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,13,,7,2.3601885502198563,1.0,0.0,7
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,8,2.310761960625678,1.0,0.0,8
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,9,2.145422368817413,1.0,0.0,9
+what is the lowest recorded temperature on mount vinson,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,12,,10,2.145422368817413,1.0,0.0,10
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,0,,1,6.164600277613188,0.0,1.0,1
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,4,,2,5.323642459485975,0.0,1.0,2
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,14,,3,5.25841036618732,0.0,1.0,3
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,2,,4,4.577430687275138,0.0,1.0,4
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,3,,5,4.004897452551875,0.0,1.0,5
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,1,,6,3.1965182289687926,0.0,1.0,6
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,13,,7,2.9724503210363067,0.0,1.0,7
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,11,,8,1.7199287939082522,0.0,1.0,8
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,10,,9,1.6863989535702286,0.0,1.0,9
+how common is the word in the english language,,0.9999999999999999,6.646897422031862e-64,0.1,2.3025850929940455,False,5,,10,1.5604522288128277,0.0,1.0,10
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,1,2.4453781969800366,1.0,0.0,1
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,2,2.0658885752751326,1.0,0.0,2
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,3,1.4098333762114987,1.0,0.0,3
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,4,,4,1.3375245974444576,1.0,0.0,4
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,5,1.06125810722272,1.0,0.0,5
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,10,,6,1.06125810722272,1.0,0.0,6
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,14,,7,1.06125810722272,1.0,0.0,7
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,8,1.019365970869477,1.0,0.0,8
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,6,,9,0.795396566437452,1.0,0.0,9
+when does karev die in grey's anatomy,I don't know.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,13,,10,0.795396566437452,1.0,0.0,10
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,2,,1,7.995746100245348,1.0,0.0,1
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,5,,2,6.966405202165529,1.0,0.0,2
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,0,,3,6.291974016992126,1.0,0.0,3
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,1,,4,5.575139298089891,1.0,0.0,4
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,9,,5,5.363076213207805,1.0,0.0,5
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,10,,6,4.861652373273995,1.0,0.0,6
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,8,,7,4.730968557601052,1.0,0.0,7
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,3,,8,4.438845158160282,1.0,0.0,8
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,6,,9,4.282110322322265,1.0,0.0,9
+what part of the brain is in the middle cranial fossa,The middle cranial fossa houses the **temporal lobes** of the brain.,0.9999999999999999,6.646897422031862e-64,0.0,0.0,False,7,,10,4.164954207117064,1.0,0.0,10
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,3,,1,5.979446582085888,1.0,0.0,3
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,13,,2,3.8400524038159807,1.0,0.0,4
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,6,,3,3.6503104106971564,1.0,0.0,5
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,10,,4,3.5810175820453,0.0,1.0,1
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,9,,5,3.322493200764259,0.0,1.0,2
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,11,,6,2.929140601172707,1.0,0.0,6
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,2,,7,2.352913639023426,1.0,0.0,7
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,7,,8,2.0601919234946866,1.0,0.0,8
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,1,,9,1.953871660827616,1.0,0.0,9
+my first love was a castle in the sky,I don't know.,0.8181818181818182,0.003814920082550714,0.5,0.6931471805599453,False,5,,10,1.5572791414176774,1.0,0.0,10

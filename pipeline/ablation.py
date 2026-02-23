@@ -65,6 +65,7 @@ def run_ablation(
         influence_results.append(
             {
                 "doc_id": docs[i]["doc_id"],
+                "passage": docs[i].get("passage", ""),
                 "retrieval_rank": docs[i]["retrieval_rank"],
                 "retrieval_score": docs[i]["retrieval_score"],
                 "ablated_answer": ablated_answer,

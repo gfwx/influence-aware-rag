@@ -12,6 +12,7 @@ import random
 import time
 from collections import Counter
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -278,7 +279,45 @@ def spearman_color(rho):
     return "value-bad", "DIVERGENT"
 
 
-def simulate_query(n_docs=10, seed=None):
+import re
+
+def highlight_query_terms(text: str, query: str) -> str:
+    """
+    Highlights words in `text` that appear in `query` (case-insensitive)
+    using HTML/CSS. Excludes common stop words to avoid highlighting 'the', 'is', 'in'.
+    """
+    if not text or not query:
+        return text
+        
+    stop_words = {
+        "the", "is", "in", "at", "which", "on", "for", "a", "an", "and", 
+        "or", "but", "to", "with", "of", "how", "what", "where", "when", 
+        "who", "why", "did", "does", "do", "has", "have", "had", "been", "was", "were"
+    }
+    
+    # Extract alphanumeric query terms
+    query_terms = [t.lower() for t in re.findall(r'\b\w+\b', query)]
+    query_terms = [t for t in query_terms if t not in stop_words and len(t) > 1]
+    
+    if not query_terms:
+        return text
+        
+    # Build regex to find any of the query terms (case insensitive)
+    # Using negative lookbehind/lookahead for letters so it catches words next to punctuation
+    pattern = r'(?<![a-zA-Z])(' + '|'.join(map(re.escape, query_terms)) + r')(?![a-zA-Z])'
+    
+    # Replace with highlighted version
+    highlighted = re.sub(
+        pattern, 
+        r'<strong style="background-color:rgba(37,99,235,0.2);color:#111111;padding:0 2px;border-radius:2px;">\1</strong>', 
+        text, 
+        flags=re.IGNORECASE
+    )
+    
+    return highlighted
+
+
+def simulate_query(query_text: str, n_docs=10, seed=None):
     """Simulate one query's retrieval + ablation results."""
     rng = np.random.default_rng(seed)
     retrieval_scores = np.sort(rng.exponential(2.0, n_docs))[::-1]
@@ -290,9 +329,13 @@ def simulate_query(n_docs=10, seed=None):
         retrieval_scores * 0.5 + noise + rng.uniform(0, 0.3, n_docs), 0.01, 1.0
     )
 
-    passages = [
-        f"Document {i + 1}: "
-        + rng.choice(
+    # Extract non-stop words from query to inject into passages
+    stop_words = {"what", "is", "the", "in", "who", "played", "when", "was", "where", "did", "how", "many", "are", "of", "to", "and", "a"}
+    query_words = [w for w in re.findall(r'\b\w+\b', query_text.lower()) if w not in stop_words and len(w) > 2]
+    
+    passages = []
+    for i in range(n_docs):
+        base_sentence = rng.choice(
             [
                 "The study examined the relationship between neural network depth and generalization error...",
                 "Recent advances in transformer architectures have demonstrated significant improvements...",
@@ -306,8 +349,14 @@ def simulate_query(n_docs=10, seed=None):
                 "Longitudinal studies over 12 months reveal consistent patterns in user behaviour...",
             ]
         )
-        for i in range(n_docs)
-    ]
+        # Randomly inject 1-3 query words into the passage to simulate a match
+        if query_words:
+            num_inject = rng.integers(1, min(len(query_words) + 1, 4))
+            injected_words = rng.choice(query_words, size=num_inject, replace=False)
+            passage = f"Document {i + 1}: {' '.join(injected_words)} — {base_sentence}"
+        else:
+            passage = f"Document {i + 1}: {base_sentence}"
+        passages.append(passage)
 
     ret_ranks = np.argsort(np.argsort(-retrieval_scores)) + 1
     inf_ranks = np.argsort(np.argsort(-influence_scores)) + 1
@@ -343,10 +392,36 @@ def simulate_query(n_docs=10, seed=None):
 
 def run_full_simulation(n_queries, n_docs, seed=42):
     results = []
+    
+    # A set of real-world queries for the simulation to cycle through
+    real_queries = [
+        "what is the population of new york city in 2020",
+        "who played the main character in the movie gladiator",
+        "when was the first iphone released",
+        "where did they film high school musical two",
+        "how many episodes are in friends season 3",
+        "who won the super bowl in 1999",
+        "what is the capital city of australia",
+        "when did the cold war start and end",
+        "what is the distance from the earth to the moon",
+        "who wrote the book 1984",
+        "how long does it take for light from the sun to reach earth",
+        "what is the tallest mountain in the world",
+        "who is the ceo of microsoft",
+        "where was the declaration of independence signed",
+        "what is the main ingredient in guacamole",
+    ]
+    
     for i in range(n_queries):
-        r = simulate_query(n_docs=n_docs, seed=seed + i)
+        # Pick a real query, cycling if n_queries > len(real_queries)
+        q_text = real_queries[i % len(real_queries)]
+        # Add a slight variation if we cycle to make it unique
+        if i >= len(real_queries):
+            q_text = f"{q_text} ({i + 1})"
+            
+        r = simulate_query(query_text=q_text, n_docs=n_docs, seed=seed + i)
         r["query_id"] = i + 1
-        r["query"] = f"Query #{i + 1}"
+        r["query"] = q_text
         results.append(r)
     return results
 
@@ -572,49 +647,12 @@ if st.session_state.results is None:
     # Welcome state
     st.markdown(
         """
-    <div class="panel panel-accent" style="margin-top:24px;max-width:640px;">
-      <div class="label">Getting Started</div>
-      <div style="margin-top:10px;font-size:14px;color:#444444;line-height:1.7;">
-        Configure parameters in the sidebar, then click
-        <strong style="color:#2563eb;">▶ RUN SIMULATION</strong> for a demo, or select
-        <strong style="color:#2563eb;">Load Results (CSV)</strong> to visualise real pipeline output.
-      </div>
-      <div style="margin-top:16px;font-size:12px;color:#666666;font-family:'IBM Plex Mono',monospace;">
-        Run the pipeline: <code>python run_pipeline.py</code> · Then load <code>outputs/rag_influence_results.csv</code>
-      </div>
-    </div>
 
     <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:800px;">
     """,
         unsafe_allow_html=True,
     )
 
-    for icon, title, body in [
-        (
-            "◈",
-            "Retrieval–Influence Divergence",
-            "Measures if high-ranked documents actually drive LLM output",
-        ),
-        (
-            "◉",
-            "Ablation-Based Attribution",
-            "Systematically removes each document to quantify influence",
-        ),
-        (
-            "◎",
-            "Diagnostic, Not Architectural",
-            "Audits existing RAG pipelines without modifying them",
-        ),
-    ]:
-        st.markdown(
-            f"""
-        <div class="panel">
-          <div style="font-size:20px;color:#2563eb;margin-bottom:10px;">{icon}</div>
-          <div style="font-weight:600;color:#111111;margin-bottom:6px;">{title}</div>
-          <div style="font-size:13px;color:#666666;line-height:1.6;">{body}</div>
-        </div>""",
-            unsafe_allow_html=True,
-        )
     st.markdown("</div>", unsafe_allow_html=True)
     st.stop()
 
@@ -636,7 +674,7 @@ summary = pd.DataFrame(
             "Spearman ρ": round(r["spearman_rho"], 3),
             "Dominance Ratio": round(r["dominance_ratio"], 3),
             "Entropy": round(r["influence_entropy"], 3),
-            "Divergent": r["is_divergent"],
+            "Divergent": r["spearman_rho"] < div_threshold,  # dynamically computed
             "p-value": round(r["pvalue"], 4),
         }
         for r in results
@@ -704,8 +742,14 @@ with k4:
 st.markdown("---")
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4 = st.tabs(
-    ["  OVERVIEW  ", "  QUERY INSPECTOR  ", "  FAILURE MODES  ", "  METHODOLOGY  "]
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    [
+        "  OVERVIEW  ",
+        "  QUERY INSPECTOR  ",
+        "  QUERY ANALYZER  ",
+        "  FAILURE MODES  ",
+        "  METHODOLOGY  ",
+    ]
 )
 
 
@@ -811,13 +855,20 @@ with tab1:
 with tab2:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
-    query_ids = [f"Query #{r['query_id']}" for r in results]
-    sel_label = st.selectbox("Select query to inspect", query_ids)
-    sel_idx = int(sel_label.split("#")[1]) - 1
+    query_options = [f"Q{r['query_id']}: {r['query'][:60]}..." if len(str(r['query'])) > 60 else f"Q{r['query_id']}: {str(r['query'])}" for r in results]
+    sel_label = st.selectbox("Select query to inspect", query_options)
+    
+    # Extract the id from "QX: ..."
+    sel_id_str = sel_label.split(":")[0][1:] # e.g. "Q1" -> "1"
+    sel_idx = int(sel_id_str) - 1
     r = results[sel_idx]
     docs = r["docs"]
+    
+    st.markdown(f"**Query:** {r['query']}")
 
     cls, lbl = spearman_color(r["spearman_rho"])
+    is_div_dynamic = r["spearman_rho"] < div_threshold
+    
     st.markdown(
         f"""
     <div class="panel panel-accent" style="display:flex;gap:40px;align-items:center;flex-wrap:wrap;">
@@ -827,7 +878,7 @@ with tab2:
       </div>
       <div>
         <div class="label">Status</div>
-        <div style="margin-top:4px;"><span class="tag {"tag-bad" if r["is_divergent"] else "tag-good"}">{lbl}</span></div>
+        <div style="margin-top:4px;"><span class="tag {"tag-bad" if is_div_dynamic else "tag-good"}">{lbl}</span></div>
       </div>
       <div>
         <div class="label">Dominance Ratio</div>
@@ -935,9 +986,116 @@ with tab2:
 
 
 # ═══════════════════════════════════════════════════════
-# TAB 3 — FAILURE MODES
+# TAB 3 — QUERY ANALYZER
 # ═══════════════════════════════════════════════════════
 with tab3:
+    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
+    
+    col_qlist, col_docs, col_pie = st.columns([1, 2, 2], gap="large")
+    
+    with col_qlist:
+        st.markdown('<div class="label" style="margin-bottom:10px;">Select Query</div>', unsafe_allow_html=True)
+        query_options = [f"Q{r['query_id']}: {r['query'][:40]}..." if len(str(r['query'])) > 40 else f"Q{r['query_id']}: {str(r['query'])}" for r in results]
+        
+        # Add custom CSS for making the radio button container scrollable if there are many queries
+        st.markdown(
+            """
+            <style>
+            [data-testid="stRadio"] {
+                max-height: 600px;
+                overflow-y: auto;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+        sel_q_label = st.radio("Queries", query_options, label_visibility="collapsed")
+        sel_q_idx = query_options.index(sel_q_label)
+        selected_r = results[sel_q_idx]
+        
+    with col_docs:
+        st.markdown('<div class="label" style="margin-bottom:10px;">Retrieved Documents</div>', unsafe_allow_html=True)
+        st.markdown(f"**Query {selected_r['query_id']}:** {selected_r['query']}")
+        
+        if "baseline_answer" in selected_r and selected_r["baseline_answer"]:
+            st.markdown(f"**Baseline Answer:** {selected_r['baseline_answer']}")
+
+        st.markdown("<hr style='margin:10px 0'>", unsafe_allow_html=True)
+        
+        # List of documents
+        docs_sorted = sorted(selected_r["docs"], key=lambda x: x["influence_rank"])
+        for d in docs_sorted:
+            inf_score = d['influence_score']
+            color = "#16a34a" if inf_score > 0 else "#dc2626" if inf_score < 0 else "#666666"
+            
+            st.markdown(f"**Doc {d['doc_id']}** (Influence Rank: **{d['influence_rank']}**, Score: <span style='color:{color}'>{inf_score:.3f}</span>)", unsafe_allow_html=True)
+            
+            passage_text = d.get("passage", "")
+            if passage_text:
+                with st.expander("View Passage Text"):
+                    highlighted_text = highlight_query_terms(passage_text, selected_r['query'])
+                    st.markdown(highlighted_text, unsafe_allow_html=True)
+            else:
+                st.caption("No passage text available in results.")
+
+    with col_pie:
+        st.markdown('<div class="label" style="margin-bottom:10px;">Explicit Ablation Results (Influence)</div>', unsafe_allow_html=True)
+        
+        labels = []
+        sizes = []
+        colors = []
+        
+        cmap = plt.get_cmap("tab20")
+        
+        # For a pie chart, we only plot positive influence scores
+        for i, d in enumerate(docs_sorted):
+            if d['influence_score'] > 0:
+                labels.append(f"Doc {d['doc_id']} (Inf: {d['influence_score']:.2f})")
+                sizes.append(d['influence_score'])
+                colors.append(cmap(i % 20))
+                
+        if sum(sizes) > 0:
+            fig, ax = plt.subplots(figsize=(6, 6))
+            wedges, texts, autotexts = ax.pie(
+                sizes, 
+                labels=labels, 
+                autopct='%1.1f%%', 
+                startangle=90, 
+                colors=colors,
+                wedgeprops=dict(width=0.6, edgecolor='#ffffff', linewidth=1) # Donut chart style
+            )
+            ax.axis('equal')
+            fig.patch.set_alpha(0.0)
+            
+            # Label styling
+            for text in texts:
+                text.set_color('#111111')
+                text.set_fontsize(9)
+                text.set_fontfamily('monospace')
+            for autotext in autotexts:
+                autotext.set_color('#111111')
+                autotext.set_fontsize(8)
+                autotext.set_fontweight('bold')
+                
+            st.pyplot(fig, transparent=True)
+            plt.close(fig)
+            
+            st.markdown(
+                """
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#666666;line-height:1.6;margin-top:12px;">
+                Note: Only documents with positive influence scores (>0) are included in the pie chart. Documents that had zero or negative impact are excluded.
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        else:
+            st.info("No documents had a positive influence score for this query.")
+
+
+# ═══════════════════════════════════════════════════════
+# TAB 4 — FAILURE MODES
+# ═══════════════════════════════════════════════════════
+with tab4:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
     # Collect all failure mode instances
@@ -1033,9 +1191,9 @@ with tab3:
 
 
 # ═══════════════════════════════════════════════════════
-# TAB 4 — METHODOLOGY
+# TAB 5 — METHODOLOGY
 # ═══════════════════════════════════════════════════════
-with tab4:
+with tab5:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
     col_m1, col_m2 = st.columns([1, 1], gap="large")
 

@@ -20,6 +20,16 @@ The pipeline executes in 7 distinct algorithmic phases per run:
 
 This entire 7-phase loop is repeated for (e.g.) 50 different queries, generating a comprehensive statistical analysis of the system's behavior.
 
+### What the Simulation Mode Tests (In a Nutshell)
+
+When running the dashboard in **Simulation Mode** (instead of passing real LLM data through a CSV), the system bypasses the 7-phase loop above and uses random number generators to mimic the math outputs.
+
+**The Simulation does NOT test the LLM or the Retriever models at all.** It is purely a UI/UX test harness designed to:
+
+1. Preview how the frontend dashboard responds to statistical variations natively.
+2. Ensure the mathematical UI logic (such as flagging ρ < 0.7 as Divergent) works flawlessly before spending money on huge LLM ablation runs.
+3. Verify failure mode detectors behave correctly under randomized mathematical constraints.
+
 ---
 
 ## 2. The Retrieval Engine: How BM25 Works
