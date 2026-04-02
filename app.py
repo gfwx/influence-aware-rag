@@ -8,7 +8,7 @@ Supports two modes:
 """
 
 import os
-import random
+import re
 import time
 from collections import Counter
 
@@ -252,7 +252,6 @@ hr { border-color: var(--border) !important; }
 )
 
 
-
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 
@@ -279,8 +278,6 @@ def spearman_color(rho):
     return "value-bad", "DIVERGENT"
 
 
-import re
-
 def highlight_query_terms(text: str, query: str) -> str:
     """
     Highlights words in `text` that appear in `query` (case-insensitive)
@@ -288,32 +285,61 @@ def highlight_query_terms(text: str, query: str) -> str:
     """
     if not text or not query:
         return text
-        
+
     stop_words = {
-        "the", "is", "in", "at", "which", "on", "for", "a", "an", "and", 
-        "or", "but", "to", "with", "of", "how", "what", "where", "when", 
-        "who", "why", "did", "does", "do", "has", "have", "had", "been", "was", "were"
+        "the",
+        "is",
+        "in",
+        "at",
+        "which",
+        "on",
+        "for",
+        "a",
+        "an",
+        "and",
+        "or",
+        "but",
+        "to",
+        "with",
+        "of",
+        "how",
+        "what",
+        "where",
+        "when",
+        "who",
+        "why",
+        "did",
+        "does",
+        "do",
+        "has",
+        "have",
+        "had",
+        "been",
+        "was",
+        "were",
     }
-    
+
     # Extract alphanumeric query terms
-    query_terms = [t.lower() for t in re.findall(r'\b\w+\b', query)]
+    query_terms = [t.lower() for t in re.findall(r"\b\w+\b", query)]
     query_terms = [t for t in query_terms if t not in stop_words and len(t) > 1]
-    
+
     if not query_terms:
         return text
-        
+
     # Build regex to find any of the query terms (case insensitive)
     # Using negative lookbehind/lookahead for letters so it catches words next to punctuation
-    pattern = r'(?<![a-zA-Z])(' + '|'.join(map(re.escape, query_terms)) + r')(?![a-zA-Z])'
-    
+    pattern = (
+        r"(?<![a-zA-Z])(" + "|".join(map(re.escape, query_terms)) + r")(?![a-zA-Z])"
+    )
+
     # Replace with highlighted version
     highlighted = re.sub(
-        pattern, 
-        r'<strong style="background-color:rgba(37,99,235,0.2);color:#111111;padding:0 2px;border-radius:2px;">\1</strong>', 
-        text, 
-        flags=re.IGNORECASE
+        pattern,
+        r'<strong style="background-color:rgba(37,99,235,0.2);color:#111111;padding:0 2px;border-radius:2px;">\1</strong>',
+        text,
+        flags=re.IGNORECASE,
     )
-    
+
     return highlighted
 
 
@@ -330,9 +356,31 @@ def simulate_query(query_text: str, n_docs=10, seed=None):
     )
 
     # Extract non-stop words from query to inject into passages
-    stop_words = {"what", "is", "the", "in", "who", "played", "when", "was", "where", "did", "how", "many", "are", "of", "to", "and", "a"}
-    query_words = [w for w in re.findall(r'\b\w+\b', query_text.lower()) if w not in stop_words and len(w) > 2]
-    
+    stop_words = {
+        "what",
+        "is",
+        "the",
+        "in",
+        "who",
+        "played",
+        "when",
+        "was",
+        "where",
+        "did",
+        "how",
+        "many",
+        "are",
+        "of",
+        "to",
+        "and",
+        "a",
+    }
+    query_words = [
+        w
+        for w in re.findall(r"\b\w+\b", query_text.lower())
+        if w not in stop_words and len(w) > 2
+    ]
+
     passages = []
     for i in range(n_docs):
         base_sentence = rng.choice(
@@ -392,7 +440,7 @@ def simulate_query(query_text: str, n_docs=10, seed=None):
 
 def run_full_simulation(n_queries, n_docs, seed=42):
     results = []
-    
+
     # A set of real-world queries for the simulation to cycle through
     real_queries = [
         "what is the population of new york city in 2020",
@@ -411,14 +459,14 @@ def run_full_simulation(n_queries, n_docs, seed=42):
         "where was the declaration of independence signed",
         "what is the main ingredient in guacamole",
     ]
-    
+
     for i in range(n_queries):
         # Pick a real query, cycling if n_queries > len(real_queries)
         q_text = real_queries[i % len(real_queries)]
         # Add a slight variation if we cycle to make it unique
         if i >= len(real_queries):
             q_text = f"{q_text} ({i + 1})"
-            
+
         r = simulate_query(query_text=q_text, n_docs=n_docs, seed=seed + i)
         r["query_id"] = i + 1
         r["query"] = q_text
@@ -432,6 +480,10 @@ def load_results_from_csv(csv_path: str, div_threshold: float = 0.7):
     that the dashboard expects.
     """
     df = pd.read_csv(csv_path)
+
+    # Validate CSV has required columns
+    if df.empty or "query" not in df.columns:
+        raise ValueError("CSV file is empty or missing 'query' column")
 
     # Group by query
     results = []
@@ -457,7 +509,11 @@ def load_results_from_csv(csv_path: str, div_threshold: float = 0.7):
                 "query": str(query_text),
                 "docs": docs,
                 "spearman_rho": rho,
-                "pvalue": float(group.get("spearman_pvalue", group.get("pvalue", pd.Series([0.0]))).iloc[0]),
+                "pvalue": float(
+                    group.get(
+                        "spearman_pvalue", group.get("pvalue", pd.Series([0.0]))
+                    ).iloc[0]
+                ),
                 "dominance_ratio": float(group["dominance_ratio"].iloc[0]),
                 "influence_entropy": float(group["influence_entropy"].iloc[0]),
                 "is_divergent": rho < div_threshold,
@@ -505,9 +561,7 @@ with st.sidebar:
         )
         seed = st.number_input("Random seed", min_value=0, max_value=9999, value=42)
     else:
-        st.markdown(
-            '<div class="label">CSV File</div>', unsafe_allow_html=True
-        )
+        st.markdown('<div class="label">CSV File</div>', unsafe_allow_html=True)
         csv_path = st.text_input(
             "Path to results CSV",
             value="outputs/rag_influence_results.csv",
@@ -556,7 +610,7 @@ with st.sidebar:
 
 # ── Session state ───────────────────────────────────────────────────────────────
 if "results" not in st.session_state:
-    st.session_state.results = None
+    st.session_state.results = []
 if "selected_query" not in st.session_state:
     st.session_state.selected_query = 0
 if "data_source_label" not in st.session_state:
@@ -605,7 +659,9 @@ if run_btn:
 
         st.session_state.results = run_full_simulation(n_queries, n_docs, seed)
         st.session_state.selected_query = 0
-        st.session_state.data_source_label = f"Simulation · {n_queries} queries × {n_docs} docs"
+        st.session_state.data_source_label = (
+            f"Simulation · {n_queries} queries × {n_docs} docs"
+        )
         progress_bar.empty()
         status_text.empty()
         st.success(
@@ -624,18 +680,22 @@ if run_btn:
                 source = "uploaded file"
             else:
                 if not os.path.exists(csv_path):
-                    st.error(f"File not found: `{csv_path}`. Run the pipeline first with `python run_pipeline.py`.")
+                    st.error(
+                        f"File not found: `{csv_path}`. Run the pipeline first with `python run_pipeline.py`."
+                    )
                     st.stop()
                 loaded = load_results_from_csv(csv_path, div_threshold)
                 source = csv_path
 
             # Determine n_docs from data
-            if loaded and loaded[0]["docs"]:
+            if loaded and len(loaded) > 0 and loaded[0].get("docs"):
                 n_docs = len(loaded[0]["docs"])
 
             st.session_state.results = loaded
             st.session_state.selected_query = 0
-            st.session_state.data_source_label = f"CSV · {source} · {len(loaded)} queries"
+            st.session_state.data_source_label = (
+                f"CSV · {source} · {len(loaded)} queries"
+            )
             st.success(f"Loaded {len(loaded)} queries from {source}")
         except Exception as exc:
             st.error(f"Failed to load CSV: {exc}")
@@ -643,8 +703,8 @@ if run_btn:
 
 
 # ── Main content (only shown after run) ─────────────────────────────────────────
-if st.session_state.results is None:
-    # Welcome state
+if not st.session_state.results:
+    # Welcome state - no results yet
     st.markdown(
         """
 
@@ -658,6 +718,13 @@ if st.session_state.results is None:
 
 
 results = st.session_state.results
+
+# Double-check results is a non-empty list
+if not isinstance(results, list) or len(results) == 0:
+    st.warning(
+        "No results available. Please run a simulation or load data from a CSV file."
+    )
+    st.stop()
 
 # Data source badge
 if st.session_state.data_source_label:
@@ -855,20 +922,25 @@ with tab1:
 with tab2:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
 
-    query_options = [f"Q{r['query_id']}: {r['query'][:60]}..." if len(str(r['query'])) > 60 else f"Q{r['query_id']}: {str(r['query'])}" for r in results]
+    query_options = [
+        f"Q{r['query_id']}: {r['query'][:60]}..."
+        if len(str(r["query"])) > 60
+        else f"Q{r['query_id']}: {str(r['query'])}"
+        for r in results
+    ]
     sel_label = st.selectbox("Select query to inspect", query_options)
-    
+
     # Extract the id from "QX: ..."
-    sel_id_str = sel_label.split(":")[0][1:] # e.g. "Q1" -> "1"
+    sel_id_str = sel_label.split(":")[0][1:]  # e.g. "Q1" -> "1"
     sel_idx = int(sel_id_str) - 1
     r = results[sel_idx]
     docs = r["docs"]
-    
+
     st.markdown(f"**Query:** {r['query']}")
 
     cls, lbl = spearman_color(r["spearman_rho"])
     is_div_dynamic = r["spearman_rho"] < div_threshold
-    
+
     st.markdown(
         f"""
     <div class="panel panel-accent" style="display:flex;gap:40px;align-items:center;flex-wrap:wrap;">
@@ -951,9 +1023,9 @@ with tab2:
         green = 255 - red
         bg = f"rgb({red},{green},80)"
         cell_html += f"""
-        <div class="heatmap-cell" title="D{d['doc_id']}: ret={d['retrieval_rank']}, inf={d['influence_rank']}, Δ={diff}"
+        <div class="heatmap-cell" title="D{d["doc_id"]}: ret={d["retrieval_rank"]}, inf={d["influence_rank"]}, Δ={diff}"
              style="background:{bg};color:#111111;">
-          D{d['doc_id']}
+          D{d["doc_id"]}
         </div>"""
     cell_html += "</div>"
     cell_html += "<div style=\"margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#666666;\">Colour = |retrieval rank − influence rank| · Green = aligned · Red = divergent</div>"
@@ -990,13 +1062,21 @@ with tab2:
 # ═══════════════════════════════════════════════════════
 with tab3:
     st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
-    
+
     col_qlist, col_docs, col_pie = st.columns([1, 2, 2], gap="large")
-    
+
     with col_qlist:
-        st.markdown('<div class="label" style="margin-bottom:10px;">Select Query</div>', unsafe_allow_html=True)
-        query_options = [f"Q{r['query_id']}: {r['query'][:40]}..." if len(str(r['query'])) > 40 else f"Q{r['query_id']}: {str(r['query'])}" for r in results]
-        
+        st.markdown(
+            '<div class="label" style="margin-bottom:10px;">Select Query</div>',
+            unsafe_allow_html=True,
+        )
+        query_options = [
+            f"Q{r['query_id']}: {r['query'][:40]}..."
+            if len(str(r["query"])) > 40
+            else f"Q{r['query_id']}: {str(r['query'])}"
+            for r in results
+        ]
+
         # Add custom CSS for making the radio button container scrollable if there are many queries
         st.markdown(
             """
@@ -1007,86 +1087,105 @@ with tab3:
             }
             </style>
             """,
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
         sel_q_label = st.radio("Queries", query_options, label_visibility="collapsed")
         sel_q_idx = query_options.index(sel_q_label)
         selected_r = results[sel_q_idx]
-        
+
     with col_docs:
-        st.markdown('<div class="label" style="margin-bottom:10px;">Retrieved Documents</div>', unsafe_allow_html=True)
+        st.markdown(
+            '<div class="label" style="margin-bottom:10px;">Retrieved Documents</div>',
+            unsafe_allow_html=True,
+        )
         st.markdown(f"**Query {selected_r['query_id']}:** {selected_r['query']}")
-        
+
         if "baseline_answer" in selected_r and selected_r["baseline_answer"]:
             st.markdown(f"**Baseline Answer:** {selected_r['baseline_answer']}")
 
         st.markdown("<hr style='margin:10px 0'>", unsafe_allow_html=True)
-        
+
         # List of documents
         docs_sorted = sorted(selected_r["docs"], key=lambda x: x["influence_rank"])
         for d in docs_sorted:
-            inf_score = d['influence_score']
-            color = "#16a34a" if inf_score > 0 else "#dc2626" if inf_score < 0 else "#666666"
-            
-            st.markdown(f"**Doc {d['doc_id']}** (Influence Rank: **{d['influence_rank']}**, Score: <span style='color:{color}'>{inf_score:.3f}</span>)", unsafe_allow_html=True)
-            
+            inf_score = d["influence_score"]
+            color = (
+                "#16a34a"
+                if inf_score > 0
+                else "#dc2626"
+                if inf_score < 0
+                else "#666666"
+            )
+
+            st.markdown(
+                f"**Doc {d['doc_id']}** (Influence Rank: **{d['influence_rank']}**, Score: <span style='color:{color}'>{inf_score:.3f}</span>)",
+                unsafe_allow_html=True,
+            )
+
             passage_text = d.get("passage", "")
             if passage_text:
                 with st.expander("View Passage Text"):
-                    highlighted_text = highlight_query_terms(passage_text, selected_r['query'])
+                    highlighted_text = highlight_query_terms(
+                        passage_text, selected_r["query"]
+                    )
                     st.markdown(highlighted_text, unsafe_allow_html=True)
             else:
                 st.caption("No passage text available in results.")
 
     with col_pie:
-        st.markdown('<div class="label" style="margin-bottom:10px;">Explicit Ablation Results (Influence)</div>', unsafe_allow_html=True)
-        
+        st.markdown(
+            '<div class="label" style="margin-bottom:10px;">Explicit Ablation Results (Influence)</div>',
+            unsafe_allow_html=True,
+        )
+
         labels = []
         sizes = []
         colors = []
-        
+
         cmap = plt.get_cmap("tab20")
-        
+
         # For a pie chart, we only plot positive influence scores
         for i, d in enumerate(docs_sorted):
-            if d['influence_score'] > 0:
+            if d["influence_score"] > 0:
                 labels.append(f"Doc {d['doc_id']} (Inf: {d['influence_score']:.2f})")
-                sizes.append(d['influence_score'])
+                sizes.append(d["influence_score"])
                 colors.append(cmap(i % 20))
-                
+
         if sum(sizes) > 0:
             fig, ax = plt.subplots(figsize=(6, 6))
             wedges, texts, autotexts = ax.pie(
-                sizes, 
-                labels=labels, 
-                autopct='%1.1f%%', 
-                startangle=90, 
+                sizes,
+                labels=labels,
+                autopct="%1.1f%%",
+                startangle=90,
                 colors=colors,
-                wedgeprops=dict(width=0.6, edgecolor='#ffffff', linewidth=1) # Donut chart style
+                wedgeprops=dict(
+                    width=0.6, edgecolor="#ffffff", linewidth=1
+                ),  # Donut chart style
             )
-            ax.axis('equal')
+            ax.axis("equal")
             fig.patch.set_alpha(0.0)
-            
+
             # Label styling
             for text in texts:
-                text.set_color('#111111')
+                text.set_color("#111111")
                 text.set_fontsize(9)
-                text.set_fontfamily('monospace')
+                text.set_fontfamily("monospace")
             for autotext in autotexts:
-                autotext.set_color('#111111')
+                autotext.set_color("#111111")
                 autotext.set_fontsize(8)
-                autotext.set_fontweight('bold')
-                
+                autotext.set_fontweight("bold")
+
             st.pyplot(fig, transparent=True)
             plt.close(fig)
-            
+
             st.markdown(
                 """
                 <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#666666;line-height:1.6;margin-top:12px;">
                 Note: Only documents with positive influence scores (>0) are included in the pie chart. Documents that had zero or negative impact are excluded.
                 </div>
                 """,
-                unsafe_allow_html=True
+                unsafe_allow_html=True,
             )
         else:
             st.info("No documents had a positive influence score for this query.")
